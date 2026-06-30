@@ -522,6 +522,18 @@
             padding: 0;
         }
 
+        /* Permitir scroll en el modal de categoría (submenú de variedades) */
+        #modalCategoria {
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        #modalCategoria .modal-producto-content {
+            margin: 5% auto 40px;
+            max-height: none;
+            overflow: visible;
+        }
+
         .modal-producto-img {
             width: 100%;
             height: 220px;
