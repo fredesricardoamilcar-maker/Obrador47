@@ -1621,12 +1621,11 @@
 
             document.getElementById('gridCategoria').innerHTML = items.map(buildMiniCard).join('');
             document.getElementById('modalCategoria').style.display = 'block';
-            document.body.style.overflow = 'hidden';
+            // No se oculta el scroll del body para que iOS Safari pueda scrollear dentro del modal
         }
 
         function cerrarCategoria() {
             document.getElementById('modalCategoria').style.display = 'none';
-            document.body.style.overflow = 'auto';
         }
 
         // ── MODAL PRODUCTO ──────────────────────────────────────────────
