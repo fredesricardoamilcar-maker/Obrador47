@@ -969,6 +969,14 @@
                 overflow-y: auto;
             }
 
+            /* El modal de categoría (variedades) también debe scrollear en mobile */
+            #modalCategoria .modal-producto-content {
+                max-height: 88vh;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+                padding: 24px 18px 34px;
+            }
+
             .modal-producto-img { height: 200px; }
 
             .carrito-badge {
